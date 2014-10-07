@@ -67,13 +67,13 @@ if ( ! function_exists( 'eventbrite_venue_enqueue_scripts' ) ) {
 		wp_enqueue_style( 'eventbrite-venue-raleway' );
 
 		// Main theme script
-		wp_enqueue_script( 'eventbrite-venue-main', get_template_directory_uri() . '/js/script.js',                       array( 'jquery' ), '20130915', true );
+		wp_enqueue_script( 'eventbrite-venue-main', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '20130915', true );
 
 		// Bootstrap scripts
-		wp_enqueue_script( 'eventbrite-venue-carousel', get_template_directory_uri() . '/js/bootstrap/bootstrap-carousel.js', array( 'jquery' ), '20130915', true );
-		wp_enqueue_script( 'eventbrite-venue-collapse', get_template_directory_uri() . '/js/bootstrap/bootstrap-collapse.js', array( 'jquery' ), '20130915', true );
-		wp_enqueue_script( 'eventbrite-venue-tooltip', get_template_directory_uri() . '/js/bootstrap/bootstrap-tooltip.js', array( 'jquery' ), '20130915', true );
-		wp_enqueue_script( 'eventbrite-venue-popover', get_template_directory_uri() . '/js/bootstrap/bootstrap-popover.js', array( 'jquery' ), '20130915', true );
+		wp_enqueue_script( 'eventbrite-venue-carousel', get_template_directory_uri() . '/js/bootstrap/bootstrap-carousel.js', array(), '20130915', true );
+		wp_enqueue_script( 'eventbrite-venue-collapse', get_template_directory_uri() . '/js/bootstrap/bootstrap-collapse.js', array(), '20130915', true );
+		wp_enqueue_script( 'eventbrite-venue-tooltip', get_template_directory_uri() . '/js/bootstrap/bootstrap-tooltip.js', array(), '20130915', true );
+		wp_enqueue_script( 'eventbrite-venue-popover', get_template_directory_uri() . '/js/bootstrap/bootstrap-popover.js', array(), '20130915', true );
 
 		// Modernizr
 		wp_enqueue_script( 'eventbrite-venue-modernizr', get_template_directory_uri() . '/js/libs/modernizr.min.js',     array(), '20140304', false );
