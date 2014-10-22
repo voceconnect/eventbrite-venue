@@ -41,6 +41,6 @@ Please refer to full changelog at https://github.com/voceconnect/eventbrite-venu
 
 Refer to license.txt
 
-The Eventbrite Venue and Eventbrite Event themes were developed by Voce Communications in collaboration with Eventbrite, Inc. and Automattic, Inc. The "Eventbrite" name is used with the permission of Eventbrite, Inc. For any concerns, please contact Eventbrite's API team (email: api@eventbrite.com).
+The Eventbrite Venue and Eventbrite Event themes were developed by Voce Communications in collaboration with Eventbrite, Inc. and Automattic, Inc. The "Eventbrite" name is used with the permission of Eventbrite, Inc. For any concerns, please contact Eventbrite's API team (email: [api@eventbrite.com](mailto:api@eventbrite.com)).
 
 Images in the screenshots were created by Voce Communications and are free to use/reuse/modify.
