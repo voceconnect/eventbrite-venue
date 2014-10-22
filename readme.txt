@@ -4,7 +4,7 @@ Contributors: voceplatforms, smccafferty
 Tags: eventbrite, eventbrite venue, events, venue
 Requires at least: 3.7
 Tested up to: 3.9.2
-Stable tag: 1.2
+Stable tag: 1.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,3 +40,7 @@ Please refer to full changelog at https://github.com/voceconnect/eventbrite-venu
 == License ==
 
 Refer to license.txt
+
+The Eventbrite Venue and Eventbrite Event themes were developed by Voce Communications in collaboration with Eventbrite, Inc. and Automattic, Inc. The "Eventbrite" name is used with the permission of Eventbrite, Inc. For any concerns, please contact Eventbrite's API team (email: api@eventbrite.com).
+
+Images in the screenshots were created by Voce Communications and are free to use/reuse/modify.
