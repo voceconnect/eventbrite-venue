@@ -231,13 +231,17 @@ function eventbrite_venue_get_calendar_of_events( $month, $year ) {
 			data-content="<a href=\'%8$s\' class=\'pull-right btn\'>%9$s</a><p><span>%1$s-%2$s</span>%5$s</p><p>%6$s</p>"
 			data-original-title="%7$s">%4$s</a>';
 
+		$event_description = '';
+		if ( !empty( $month_event->description->text ) )
+			$event_description = $month_event->description->text;
+
 		$output = sprintf( $format_string,
 			esc_html( $start_time ),
 			esc_html( $end_time ),
 			esc_url( $event_popover_url ),
 			esc_html( $month_event->name->text ),
 			esc_html( eventbrite_venue_get_event_ticket_price_string( $month_event->ticket_classes ) ),
-			esc_html( eventbrite_venue_get_event_excerpt( $month_event->description->text, 20 ) ),
+			esc_html( eventbrite_venue_get_event_excerpt( $event_description, 20 ) ),
 			esc_html( $month_event->name->text ),
 			esc_url( $eb_event_url ),
 			__( 'Buy', 'eventbrite-venue' )
@@ -265,7 +269,7 @@ function eventbrite_venue_get_calendar_of_events( $month, $year ) {
 				esc_url( $event_popover_url ),
 				esc_html( $event_title ),
 				esc_html( eventbrite_venue_get_event_ticket_price_string( $month_event->ticket_classes ) ),
-				esc_html( eventbrite_venue_get_event_excerpt( $month_event->description->text, 20 ) ),
+				esc_html( eventbrite_venue_get_event_excerpt( $event_description, 20 ) ),
 				esc_html( $month_event->name->text ),
 				esc_url( eventbrite_venue_get_eb_event_url( $month_event, 'wpcalendar' ) ),
 				__( 'Buy', 'eventbrite-venue' )
