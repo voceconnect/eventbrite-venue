@@ -86,8 +86,6 @@ function eventbrite_venue_get_event_date( $date, $timezone, $date_format = '' ) 
 function eventbrite_venue_get_event_ticket_price_string( $tickets ) {
 	$prices = array();
 	$price_suffix = '';
-	$currencies = array();
-	$currency = '';
 
 	foreach ( $tickets as $ticket ) {
 		if ( true == $ticket->free ) {
@@ -111,10 +109,7 @@ function eventbrite_venue_get_event_ticket_price_string( $tickets ) {
 		$price_suffix = ' and up';
 	}
 
-	if ( 1 == count( array_unique( $currencies ) ) )
-		$currency = ' ' . $currencies[0];
-
-	return sprintf( _x( '%s%s%s', 'ticket price: price - currency - price suffix', 'eventbrite-venue' ), $price, $currency, $price_suffix );
+	return sprintf( _x( '%s%s', 'ticket price: price - price suffix', 'eventbrite-venue' ), $price, $price_suffix );
 }
 
 /**
