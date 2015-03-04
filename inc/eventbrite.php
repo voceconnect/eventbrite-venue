@@ -93,12 +93,7 @@ function eventbrite_venue_get_event_ticket_price_string( $tickets ) {
 		if ( true == $ticket->free ) {
 			$prices[] = 0;
 		} else {
-			$decimal = substr( $ticket->cost->display, -3, 1 ) ?: '.';    //find decimal delimiter
-			$amount_parts = explode( $decimal, $ticket->cost->display ); //split display_price into array around delimiter
-			$amount_parts[0] = preg_replace( '/\D/', '', $amount_parts[0] );     //strip non-numeric formating from first half
-			$prices[] = implode( '.', $amount_parts ) * 100;                     //rejoin with '.' as delimiter
-
-			$currencies[] = $ticket->cost->currency;
+			$prices['value'] = $ticket->cost->value;
 		}
 
 	}
@@ -107,7 +102,7 @@ function eventbrite_venue_get_event_ticket_price_string( $tickets ) {
 	if ( empty( $prices ) ) {
 		return _x( 'Price unknown', 'ticket price', 'eventbrite-venue' );
 	}
- 
+
 	if ( 1 == count( $prices ) ) {
 		if ( 0 == $prices[0] )
 			return _x( 'Free', 'ticket price', 'eventbrite-venue' );
