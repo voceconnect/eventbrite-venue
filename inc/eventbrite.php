@@ -91,9 +91,9 @@ function eventbrite_venue_get_event_ticket_price_string( $tickets ) {
 
 	foreach ( $tickets as $ticket ) {
 		if ( true == $ticket->free ) {
-			$prices[] = 0;
+			$prices[0] = 'Free';
 		} else {
-			$prices[] = $ticket->cost->value;
+			$prices[$ticket->cost->value] = $ticket->cost->display;
 		}
 
 	}
@@ -104,23 +104,17 @@ function eventbrite_venue_get_event_ticket_price_string( $tickets ) {
 	}
 
 	if ( 1 == count( $prices ) ) {
-		if ( 0 == $prices[0] )
-			return _x( 'Free', 'ticket price', 'eventbrite-venue' );
-		else
-			$price = $prices[0];
+		$price = reset($prices);
 	} else {
-		$price = min( $prices );
-
-		if ( 0 == $price )
-			return _x( 'Free and up', 'ticket price', 'eventbrite-venue' );
-
+		ksort($prices);
+		$price = reset($prices);
 		$price_suffix = ' and up';
 	}
 
 	if ( 1 == count( array_unique( $currencies ) ) )
 		$currency = ' ' . $currencies[0];
 
-	return sprintf( _x( '%s%s%s', 'ticket price: price - currency - price suffix', 'eventbrite-venue' ), number_format_i18n( $price / 100, 2 ), $currency, $price_suffix );
+	return sprintf( _x( '%s%s%s', 'ticket price: price - currency - price suffix', 'eventbrite-venue' ), $price, $currency, $price_suffix );
 }
 
 /**
