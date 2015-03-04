@@ -93,7 +93,7 @@ function eventbrite_venue_get_event_ticket_price_string( $tickets ) {
 		if ( true == $ticket->free ) {
 			$prices[] = 0;
 		} else {
-			$prices['value'] = $ticket->cost->value;
+			$prices[] = $ticket->cost->value;
 		}
 
 	}
