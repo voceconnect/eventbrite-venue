@@ -220,6 +220,7 @@ function eventbrite_venue_get_calendar_of_events( $month, $year ) {
 		$start_time = $start_date->format( 'g:ia' );
 		$end_time   = $end_date->format( 'g:ia' );
 
+		$cta_text     = get_eventbrite_setting( 'call-to-action' );
 		$eb_event_url = eventbrite_venue_get_eb_event_url( $month_event, 'wpcalendar' );
 		$wp_event_url = eventbrite_venue_get_wp_event_url( $month_event );
 		$event_popover_url = $eb_event_url;
@@ -240,7 +241,7 @@ function eventbrite_venue_get_calendar_of_events( $month, $year ) {
 			esc_html( eventbrite_venue_get_event_excerpt( $month_event->description->text, 20 ) ),
 			esc_html( $month_event->name->text ),
 			esc_url( $eb_event_url ),
-			__( 'Buy', 'eventbrite-venue' )
+			__( esc_html($cta_text), 'eventbrite-venue' )
 		);
 
 		$event = $calendar->event()
