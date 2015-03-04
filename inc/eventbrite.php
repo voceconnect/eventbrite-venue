@@ -84,8 +84,6 @@ function eventbrite_venue_get_event_date( $date, $timezone, $date_format = '' ) 
  * price followed by text noting higher priced tickets.
  */
 function eventbrite_venue_get_event_ticket_price_string( $tickets ) {
-	$prices = array();
-	$price_suffix = '';
 
 	foreach ( $tickets as $ticket ) {
 		if ( true == $ticket->free ) {
@@ -103,11 +101,12 @@ function eventbrite_venue_get_event_ticket_price_string( $tickets ) {
 
 	if ( 1 == count( $prices ) ) {
 		$price = reset($prices);
-	} else {
-		ksort($prices);
-		$price = reset($prices);
-		$price_suffix = ' and up';
+		return _x( $price, 'ticket price', 'eventbrite-venue' );
 	}
+
+	ksort($prices);
+	$price = reset($prices);
+	$price_suffix = ' and up';
 
 	return sprintf( _x( '%s%s', 'ticket price: price - price suffix', 'eventbrite-venue' ), $price, $price_suffix );
 }
