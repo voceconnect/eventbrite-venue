@@ -269,7 +269,7 @@ function eventbrite_venue_get_calendar_of_events( $month, $year ) {
 				esc_html( eventbrite_venue_get_event_excerpt( $month_event->description->text, 20 ) ),
 				esc_html( $month_event->name->text ),
 				esc_url( eventbrite_venue_get_eb_event_url( $month_event, 'wpcalendar' ) ),
-				__( 'Buy', 'eventbrite-venue' )
+				__( esc_html($cta_text), 'eventbrite-venue' )
 			);
 
 			$counter = 0;
