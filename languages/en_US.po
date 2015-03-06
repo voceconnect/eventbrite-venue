@@ -1,0 +1,401 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: eventbrite-venue\n"
+"POT-Creation-Date: 2015-01-14 11:23-0500\n"
+"PO-Revision-Date: 2015-01-14 11:23-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ../..\n"
+
+#: ../../eventbrite-venue/archive.php:27
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: ../../eventbrite-venue/archive.php:35
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: ../../eventbrite-venue/archive.php:38
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: ../../eventbrite-venue/archive.php:41
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: ../../eventbrite-venue/archive.php:44
+msgid "Asides"
+msgstr ""
+
+#: ../../eventbrite-venue/archive.php:47
+msgid "Images"
+msgstr ""
+
+#: ../../eventbrite-venue/archive.php:50
+msgid "Videos"
+msgstr ""
+
+#: ../../eventbrite-venue/archive.php:53
+msgid "Quotes"
+msgstr ""
+
+#: ../../eventbrite-venue/archive.php:56
+msgid "Links"
+msgstr ""
+
+#: ../../eventbrite-venue/archive.php:59
+msgid "Archives"
+msgstr ""
+
+#: ../../eventbrite-venue/comments.php:46
+msgid "View Comments"
+msgstr ""
+
+#: ../../eventbrite-venue/comments.php:49
+msgid "&larr; Older"
+msgstr ""
+
+#: ../../eventbrite-venue/comments.php:52
+msgid "Newer &rarr;"
+msgstr ""
+
+#: ../../eventbrite-venue/comments.php:64
+msgid "Comments are closed."
+msgstr ""
+
+#: ../../eventbrite-venue/event-single.php:36
+msgid "More Information &rarr;"
+msgstr ""
+
+#: ../../eventbrite-venue/event.php:34
+msgid "Events"
+msgstr ""
+
+#: ../../eventbrite-venue/event.php:106
+#: ../../eventbrite-venue/tmpl/home-loop.php:73
+msgid "Read More"
+msgstr ""
+
+#: ../../eventbrite-venue/event.php:124
+#: ../../eventbrite-venue/functions.php:313
+#: ../../eventbrite-venue/tmpl/home-loop.php:84
+msgid "&larr; Previous"
+msgstr ""
+
+#: ../../eventbrite-venue/event.php:125
+#: ../../eventbrite-venue/functions.php:314
+#: ../../eventbrite-venue/tmpl/home-loop.php:85
+msgid "Next &rarr;"
+msgstr ""
+
+#: ../../eventbrite-venue/event.php:131
+#: ../../eventbrite-venue/tmpl/home-loop.php:92
+msgid "No events found"
+msgstr ""
+
+#: ../../eventbrite-venue/footer.php:18
+msgid "Proudly powered by WordPress"
+msgstr ""
+
+#: ../../eventbrite-venue/footer.php:19
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:40
+msgid "The Eventbrite Services plugin is required to connect with Eventbrite."
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:48
+msgid "Primary Menu"
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:49
+msgid "Secondary Menu"
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:112
+msgid "Primary Sidebar"
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:114
+msgid "Appears on posts and pages in the sidebar."
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:138
+msgid "responded"
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:139
+msgid "said"
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:141
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:147
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:174
+#, php-format
+msgid ""
+"<span class=\"posted-date\">Posted on <a href=\"%1$s\" title=\"%2$s\" rel="
+"\"bookmark\">%3$s</a></span>"
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:186
+#, php-format
+msgid ""
+" <span class=\"updated-date\">Updated on <a href=\"%1$s\" title=\"%2$s\" rel="
+"\"bookmark\">%3$s</a></span>"
+msgstr ""
+
+#: ../../eventbrite-venue/functions.php:352
+#, php-format
+msgid "%1$s %2$s %3$s"
+msgstr ""
+
+#: ../../eventbrite-venue/image.php:25
+#, php-format
+msgid ""
+"Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
+"\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size "
+"image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" "
+"rel=\"gallery\">%8$s</a>"
+msgstr ""
+
+#: ../../eventbrite-venue/image.php:54
+msgid "Pages:"
+msgstr ""
+
+#: ../../eventbrite-venue/image.php:60
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr ""
+
+#: ../../eventbrite-venue/image.php:61
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../../eventbrite-venue/index.php:15
+msgid "Latest Event Updates"
+msgstr ""
+
+#: ../../eventbrite-venue/search.php:13
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../../eventbrite-venue/search.php:29
+msgid "No results found"
+msgstr ""
+
+#: ../../eventbrite-venue/sidebar.php:26
+msgid "Location"
+msgstr ""
+
+#: ../../eventbrite-venue/single.php:29
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: ../../eventbrite-venue/inc/custom-header.php:30
+#: ../../eventbrite-venue/inc/custom-header.php:40
+msgid "Logo"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/custom-header.php:32
+msgid "Upload a logo to replace the default site name in the header"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/eventbrite.php:43
+#, php-format
+msgid "%1$s | %2$s"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/eventbrite.php:243
+#: ../../eventbrite-venue/inc/eventbrite.php:271
+msgid "Buy"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/eventbrite.php:554
+#: ../../eventbrite-venue/inc/theme-options.php:19
+msgid "Events List"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/eventbrite.php:557
+#: ../../eventbrite-venue/inc/theme-options.php:24
+msgid "Featured Events List"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/eventbrite.php:560
+msgid "Calendar"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/eventbrite.php:563
+msgid "About"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/plugin-enhancements.php:155
+#, php-format
+msgid " Please activate %1$s. %2$s"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/plugin-enhancements.php:157
+msgid "Activate"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/plugin-enhancements.php:165
+#, php-format
+msgid " Please install %1$s. %2$s"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/plugin-enhancements.php:167
+msgid "Install"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:14
+msgid "Eventbrite"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:16
+msgid "Recommended Page Settings for This Theme"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:20
+msgid ""
+"This page will be used to show a list of your upcoming Eventbrite events."
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:25
+msgid ""
+"This page will be used to display a carousel of the selected featured "
+"Eventbrite events along with a listing of upcoming Eventbrite events."
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:29
+msgid "Calendar Page"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:30
+msgid ""
+"This page will show a calendar (monthly) view of your Eventbrite events."
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:34
+msgid "Additional Suggested Pages"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:45
+#, php-format
+msgid ""
+"To set up the best site with this theme, we recommend adding at\n"
+"\t\tleast the following pages to your theme - Events List page, Featured "
+"Events page, and\n"
+"\t\tCalendar page. You can use an existing page or <a href=\"%s\">create a "
+"new one</a>."
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:62
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:68
+#, php-format
+msgid ""
+"You don't have any published pages. To use this feature <a href='%s'>create "
+"a new page</a> then come back here and update this."
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:80
+msgid "Create new page"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:88
+msgid "The following pages are also nice to have for this theme:"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:90
+msgid ""
+"Contact Us - hours, address, phone number, email and other contact details"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/theme-options.php:91
+msgid "About - additional information about your venue or events"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/widgets.php:19
+msgid "Your most recent events from Eventbrite"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/widgets.php:20
+msgid "Eventbrite: Just Announced"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/widgets.php:79
+msgid "Just Announced"
+msgstr ""
+
+#: ../../eventbrite-venue/inc/widgets.php:117
+msgid "Title:"
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/home-loop.php:30
+msgid "Upcoming Events"
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/navigation.php:9
+msgid "&laquo; Older Entries"
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/navigation.php:10
+msgid "Newer Entries &raquo;"
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/page-loop.php:11
+#: ../../eventbrite-venue/tmpl/post-loop.php:23
+msgid "Read the rest of this entry &raquo;"
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/post-empty.php:8
+msgid "Not Found"
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/post-empty.php:9
+msgid "Sorry, but you are looking for something that isn't here."
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/post-loop.php:18
+#, php-format
+msgid "All %s posts"
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/post-meta.php:10
+#: ../../eventbrite-venue/tmpl/post-meta.php:13
+msgid ", "
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/post-meta.php:16
+#, php-format
+msgid "This entry was posted in %1$s and tagged %2$s."
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/post-meta.php:18
+#, php-format
+msgid "This entry was posted in %1$s."
+msgstr ""
+
+#: ../../eventbrite-venue/tmpl/post-meta.php:22
+msgid "Edit"
+msgstr ""
