@@ -396,7 +396,7 @@ function eventbrite_venue_filter_events_by_month( $month, $year, $venue_events )
  */
 function eventbrite_venue_maybe_include_template( $page_id, $queried_object_id, $template ) {
 	// only redirect if the page id does not match the queried object and if event properties are not specified
-	if ( $page_id && $page_id === $queried_object_id & ( empty( get_query_var( 'eb_event' ) ) && ( empty( get_query_var( 'eb_event_id' ) ) ) ) ) {
+	if ( $page_id && $page_id === $queried_object_id & ( empty( get_query_var( 'eb_event' ) ) && empty( get_query_var( 'eb_event_id' ) ) ) ) {
 		do_action( 'eventbrite_venue_template_redirect', $page_id, $queried_object_id, $template );
 		include( get_template_directory() . '/' . $template );
 		die();
