@@ -395,7 +395,8 @@ function eventbrite_venue_filter_events_by_month( $month, $year, $venue_events )
  * @param string $template template path relative to theme dir
  */
 function eventbrite_venue_maybe_include_template( $page_id, $queried_object_id, $template ) {
-	if ( $page_id && $page_id === $queried_object_id ) {
+	// only redirect if the page id does not match the queried object and if event properties are not specified
+	if ( $page_id && $page_id === $queried_object_id & ( empty( get_query_var( 'eb_event' ) ) && empty( get_query_var( 'eb_event_id' ) ) ) ) {
 		do_action( 'eventbrite_venue_template_redirect', $page_id, $queried_object_id, $template );
 		include( get_template_directory() . '/' . $template );
 		die();
@@ -591,12 +592,17 @@ function eventbrite_venue_get_dynamic_pages() {
  * @return string
  */
 function eventbrite_venue_get_wp_event_url( $event ) {
-	$events_page_url = eventbrite_venue_get_page_url( 'events' );
+	global $wp_rewrite;
 
+	$events_page_url = eventbrite_venue_get_page_url( 'events' );
 	if ( ! $events_page_url )
 		return '';
 
-	$event_url = sprintf( '%s%s/', $events_page_url, $event->id );
+	if ( empty( $wp_rewrite->permalink_structure ) ) {
+		$event_url = add_query_arg( array( 'eb_event' => 1, 'eb_event_id' => $event->id ), $events_page_url );
+	} else {
+		$event_url = sprintf( '%s%s/', $events_page_url, $event->id );
+	}
 
 	return $event_url;
 }
