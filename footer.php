@@ -18,6 +18,9 @@
 			<a class="wordpress-link" href="http://wordpress.org/" rel="generator"><?php _e( 'Proudly powered by WordPress', 'eventbrite-venue' ); ?></a>
 			<?php printf( __( 'Theme: %1$s by %2$s.', 'eventbrite-venue' ), 'Eventbrite Venue', '<a href="http://voceplatforms.com/" rel="designer" class="designer-link">Voce Platforms</a>' ); ?>
 		</p>
+		<p>
+			<a class="wordpress-link" href="http://eventbrite.com/l/wordpress?ref=wporgfooter"><?php _e( 'We teamed up with Eventbrite', 'eventbrite-single' ); ?></a>
+		</p>
 	</div>
 </footer>
 <?php wp_footer(); ?>
